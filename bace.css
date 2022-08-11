@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+
+/* ▼body------------------------------------------------------ */
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    color: white;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: lighter;
+    margin: 0 auto;
+}
+.img_max{
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper {
+    margin: 0 auto;
+    background-image: linear-gradient(180deg, #384f66 10%, rgba(101, 90, 167, 1) 43%, rgba(133, 76, 185, 1) 60%, rgba(56, 144, 170, 1) 77%, rgb(255, 245, 132));
+
+}
+
+/* ▼header------------------------------------------------------ */
+.h_top_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1;
+
+}
+
+.h_top_cont h1 {
+    margin-left: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.h_navi_nav {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    margin-right: 1.5rem;
+}
+
+.h_navi_ul {
+    display: flex;
+}
+
+.h_navi_ul li {
+    margin: 0 1rem;
+}
+
+.h_kv_cnt {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.h_kv_back {
+    width: 100%;
+    height: 100vw;
+    background-color: #242c39;
+    border-radius: 0 0 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -60%);
+
+
+}
+
+.h_aq {
+    background-image: url(../img/aq.png);
+    background-position: center;
+    background-size: cover;
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+
+}
+
+.index_copy {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+.h_titlecall_cnt {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: block;
+    z-index: 97;
+}
+
+.h_subtitle_p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Shippori Mincho', serif;
+}
+
+.h_titlecall {
+    font-size: 4rem;
+}
+
+
+/* ▼main------------------------------------------------------ */
+.m_news_cont {
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(255, 255, 255, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.m_news_cont dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 50%;
+}
+
+.m_news_cont dl dt {
+    width: 30%;
+}
+
+.m_news_cont dl dd {
+    width: 70%;
+}
+
+.m_h2 {
+    width: 30%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1.5px white solid;
+    font-size: 1.5rem;
+}
+
+.m_about_cont {
+    width: 100%;
+    height: 70vh;
+    /* background-color: darkcyan; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.m_about{
+    width:90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color:antiquewhite */
+
+}
+.m_about_textcnt{
+    width: 45%;
+    /* background-color: brown; */
+}
+.m_about_p{
+
+}
+.m_about_img_cnt{
+    width: 20%;
+    display: block;
+    position: relative;
+    /* background-color: blue; */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.m_about_img_cnt::before{
+    content: "";
+    display: block;
+    padding-top: 100%;}
+
+.m_about_img{
+    position: absolute;
+    width: 145%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+.m_sikumi_cont {
+    width: 100%;
+    height: 100vh;
+    /* background-color: darkcyan; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.m_course_cont {
+    width: 100%;
+    height: 100vh;
+    /* background-color: darkolivegreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.course_sec {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, .1); */
+    /* padding: 0.5rem; */
+    border-radius: 500px;
+    position: relative;
+}
+.course_sec::after {
+    content: "▼";
+    font-family: 'Shippori Mincho', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(340deg)translate(-50%, -50%);
+    font-size: 15rem;
+    color: rgb(169 247 255 / 50%);
+    mix-blend-mode: hard-light;
+    z-index: -1;
+}
+
+.m_neutral_img,.m_jerryfish_img,.m_deepsea_img {
+    width: 35%;
+}
+
+.m_c_cnt{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.m_coursetext_cnt{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.course_h3{
+    font-size: 1.8rem;
+    font-family: 'Shippori Mincho', serif;
+    font-weight: lighter;
+    /* color: aquamarine; */
+    mix-blend-mode: hard-light;
+}
+.coursetext_p{
+    font-size: 1.2rem;
+
+}
+.price_p{
+    font-size: 2.7rem;
+    font-weight: bold;
+    font-family: 'Shippori Mincho', serif;
+    color: khaki;
+
+
+}
+
+/* ▼footer------------------------------------------------------ */
+footer{
+    width: 100%;
+    height: 100vh;
+}
+.f_cont {
+    margin-top: 5vh;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .1);
+    /* filter: blur(30px); */
+    background-blend-mode: hard-light;
+}
+.f_center{
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    mix-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f_policy{
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    color: #ddb400;
+    font-size: 1rem;
+    /* mix-blend-mode: normal; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+
+}
+
+/* ▼other------------------------------------------------------ */
+.scroll_btn {
+    position: fixed;
+    z-index: 99;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100px;
+    background: #242c39;
+    color: #fff;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+
+}
+
+.scroll_btn span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.h_human_vegas{
+    /* width: 90vw; */
+    opacity: 70%;
+    mix-blend-mode: plus-lighter;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
